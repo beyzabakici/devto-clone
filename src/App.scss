@@ -1,0 +1,35 @@
+input {
+  padding: 10px 8px;
+  width: 100%;
+  border: 1px solid rgb(214, 214, 215);
+  border-radius: 6px;
+  font-size: 16px;
+
+  &:focus {
+    border-color: #3b49df;
+    box-shadow: 0 0 0 1px #3b49df;
+  }
+}
+
+.App {
+  background-color: #efefef;
+}
+
+.app-container {
+  padding-top: 60px;
+  margin: auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+
+  .post-title-area {
+    display: flex;
+    flex-direction: row;
+
+    .post-title {
+      font-size: 18px;
+      margin: 8px;
+      padding: 4px;
+    }
+  }
+}

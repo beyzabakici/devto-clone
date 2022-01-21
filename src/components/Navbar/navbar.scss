@@ -1,0 +1,107 @@
+$header-shadow: rgba(0, 0, 0, 0.1);
+
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px;
+  box-shadow: 0 1px 1px $header-shadow;
+  
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: 1280px;
+
+    .navbar-static {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 50px;
+        height: 40px;
+        margin-right: 12px;
+      }
+
+      .input-wrepper {
+        position: relative;
+        width: 420px;
+        
+        .search-icon {
+          color: rgb(9, 9, 9);
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          right: -14px;
+          top: 6px;
+        }
+      }
+    }
+
+    .navbar-actions {
+      display: flex;
+      align-items: center;
+
+      .create-post-button {
+        padding: 10px;
+        margin-right: 16px;
+        border-radius: 6px;
+        border: 1px solid rgb(59, 73, 223);
+        background-color: transparent;
+        color: rgb(59, 73, 223);
+        font-weight: 600;
+        font-size: 16px;
+        
+        &:hover {
+          background-color: rgb(59, 73, 223);
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+      
+      .notifications-button {
+        margin-right: 16px;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+
+        &:hover {
+          background-color: rgba(59, 73, 223, 0.1);
+          border-radius: 6px;
+
+          .notification-icon {
+            color: rgb(50, 62, 190);
+          }
+        }
+
+        .notification-icon {
+          color: rgb(61, 61, 61);
+          width: 20px;
+          height: 20px; 
+        }
+      }
+
+      .avatar-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+
+        &:hover {
+          background-color:  rgba(59, 73, 223, 0.1);
+          border-radius: 100%;
+        }
+
+        .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

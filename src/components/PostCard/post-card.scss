@@ -1,0 +1,12 @@
+.post-card {
+  max-width: 650px;
+  background-color: #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  
+  .image {
+    width: -webkit-fill-available;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
