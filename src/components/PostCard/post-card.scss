@@ -1,12 +1,49 @@
 .post-card {
   max-width: 650px;
   background-color: #fff;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
   .image {
     width: -webkit-fill-available;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+  }
+  .post-area {
+    padding: 20px;
+    .description-area {
+      padding: 0px 0px 0px 40px;
+      .title {
+        color: rgb(23, 23, 23);
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0px;
+
+        &:hover {
+          color: rgb(47, 58, 178);
+        }
+      }
+    }
+  }
+}
+
+.tag-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .tag {
+    color: rgb(64, 64, 64);
+    padding: 4px 7px;
+    margin: 1px;
+    font-size: 14px;
+    border: 1px solid transparent;
+
+    &:hover{
+      background-color: rgba(23, 23, 23, 0.05);
+      border-radius: 6px;
+      border: 1px solid rgb(64, 64, 64);
+    }
   }
 }
